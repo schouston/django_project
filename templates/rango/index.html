@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+<!--<!DOCTYPE html>
 
 <!-- {% load static %} -->
-<html>
+<!--html>
 
     <head>
         <title>Rango</title>
     </head>
 
-    <body>
+    <body>-->
+    {% block body_block %}
         <!--<h1>Rango says...how's it going?</h1>
         <!--hello world! <strong>{{ boldmessage }}</strong><br /
         <a href="/rango/about/">About</a><br />-->
@@ -51,5 +53,4 @@
      <a href="/rango/about"\>About</a><br/>
      <a href="/rango/add_category/">Add a New Category!</a><br/>
 
-    </body>
-</html>
+     {% endblock %}
